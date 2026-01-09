@@ -1,0 +1,16 @@
+[PrefixDeclaration]
+:		http://example.com#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+gufo:		http://purl.org/nemo/gufo#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-6e7565fe64154b76b0472886814d6193
+target		:study/{id} a <http://mlto.com#Study> ; <http://mlto.com#name> {name} . 
+source		SELECT id, name FROM Study
+]]
+
